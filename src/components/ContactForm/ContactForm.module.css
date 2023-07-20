@@ -1,0 +1,74 @@
+.formWrap {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.label {
+  margin-right: auto;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+}
+
+.input {
+  margin-bottom: 10px;
+  padding: 10px;
+
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+
+  border-radius: 10px;
+  border: 2px solid rgba(140, 167, 2, 1);
+
+  transition: border var(--transition), outline var(--transition);
+}
+
+.input:focus {
+  border: 2px solid coral;
+  outline: none;
+}
+
+.btn {
+  margin-bottom: 10px;
+  padding: 10px;
+  max-width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 247, 1);
+
+  background-color: rgba(140, 167, 2, 1);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  outline: none;
+
+  cursor: pointer;
+
+  transition: background-color var(--transition), border var(--transition),
+    color var(--transition);
+}
+
+.btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background-color: rgba(250, 250, 247, 1);
+  border: 2px solid rgba(140, 167, 2, 1);
+  color: inherit;
+}
